@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KKN UMBY Kelompok 22 Maladan 2025</title>
+	<style>
+        .cut-text {
+            width: 200px; /* Atur lebar sesuai kebutuhan */
+            white-space: nowrap; /* Mencegah teks membungkus */
+            overflow: hidden; /* Sembunyikan teks yang melampaui batas */
+            text-overflow: ellipsis; /* Tambahkan ellipsis (...) */
+            padding: 5px; /* Tambahkan padding untuk estetika */
+            display: inline-block; /* Agar elemen bisa memiliki lebar */
+        }
+        .full-text {
+            display: none; /* Sembunyikan teks lengkap secara default */
+        }
+    </style>
+	    <style>
+			.more-text {
+				display: none; /* Sembunyikan teks tambahan secara default */
+			}
+			.read-more {
+				color: blue;
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		</style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet"> 
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/elusive-webfont.css">
+    <link href="css/animate.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    
+    <script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+	    <div class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	          	<i class="el-icon-lines"></i>
+	          </button>
+	          <a class="navbar-brand hidden-xs hidden-sm" href="#rumah"><h1>Maladan</h1></a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          	<ul class="nav navbar-nav">
+		            <li><a href="#rumah" class="smoothScroll">Home</a></li>
+					<li><a href="#sejarah" class="smoothScroll">Sejarah</a></li>
+					<li><a href="#penduduk" class="smoothScroll">Penduduk</a></li>					
+					<li><a href="#tentang" class="smoothScroll">Tentang</a></li>
+					<li><a href="#galeri" class="smoothScroll">Galeri</a></li>
+					<li><a href="#kegiatan" class="smoothScroll">Kegiatan</a></li>
+					<li><a href="#kontak" class="smoothScroll">Kontak</a></li>
+				</ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+    </div>
+
+  
+  
+		<!-- ==== HEADERWRAP ==== -->
+	    <div id="headerwrap" id="rumah" name="rumah">
+			<header class="clearfix">
+	  		 		<h1 class="animated bounceIn">Dusun Maladan</h1>
+	  		 		<p class="animated slideInLeft">Desa Asri nan Indah</p>
+	  		 		<p class="animated slideInRight">Ayo Cari Tau Tentang Maladan Sekarang!</p>
+	  		</header>	    
+	    </div><!-- /headerwrap -->
+
+		<!--  SERVICES -->
+		<div class="greywrap">
+			<div class="container" id="sejarah" name="sejarah">			
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-time"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<h2>Visi</h2>
+							<p align="justify">"Menjadi dusun yang sejahtera, harmonis, dan berbudaya, di mana setiap warga dapat hidup dalam kesejahteraan dan keberagaman."</p>
+						</div>
+					</div>
+						
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-star"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<h2>Misi</h2>
+							<p align="justify">
+								1. Meningkatkan kesejahteraan ekonomi warga melalui 
+								<span id="dots">...</span>
+								<span id="more" class="more-text">
+									pembangunan usaha mikro dan kecil serta pelatihan keterampilan. <br>
+									2. Mempertahankan dan melestarikan budaya lokal melalui pengembangan acara-acara budaya dan seni tradisional. <br>
+									3. Memperkuat solidaritas dan kebersamaan antarwarga melalui kegiatan gotong royong dan forum diskusi. <br>
+									4. Menyediakan akses yang lebih baik terhadap layanan pendidikan dan kesehatan untuk seluruh anggota komunitas. <br>
+									5. Melindungi dan menjaga lingkungan serta sumber daya alam untuk generasi mendatang dengan menggalakkan praktik pertanian dan pengelolaan sampah yang ramah lingkungan.
+								</span>
+							</p>
+							<span id="myBtn" class="read-more" onclick="toggleText()">Selengkapnya</span>
+						
+							<script>
+								function toggleText() {
+									var dots = document.getElementById("dots");
+									var moreText = document.getElementById("more");
+									var btnText = document.getElementById("myBtn");
+						
+									if (moreText.style.display === "none" || moreText.style.display === "") {
+										moreText.style.display = "inline"; // Tampilkan teks tambahan
+										dots.style.display = "none"; // Sembunyikan titik
+										btnText.innerHTML = "Tutup"; // Ubah teks tombol
+									} else {
+										moreText.style.display = "none"; // Sembunyikan teks tambahan
+										dots.style.display = "inline"; // Tampilkan titik
+										btnText.innerHTML = "Selengkapnya"; // Kembalikan teks tombol
+									}
+								}
+							</script>
+						</div>
+					</div>
+
+					
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-user"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<div class="fade-up">
+								<h2>Struktur</h2>
+								<p class="cut-text">
+									Kepala Dukuh : NURHUDA <br/>
+								</p>
+								<span class="full-text" align="justify">
+									Ketua Rt 001 : MAHFUT FAUZI <br/>
+									Ketua Rt 002 : INDRA JUANDA <br/>
+									Ketua Rt 003 : PRIYONO <br/>
+									Ketua Karangtaruna : MUHAMMAD NUR <br/>
+									LPMK : ARI PRASTYA <br/>
+									PKK : Siti Khotimah <br/>
+									Kader Kesehatan: Titin Nurhayati <br/>
+									Ketua Jagawarga : H. ISKANDAR </span>
+								<br>
+								<button id="toggleButton">Lihat Struktur</button>
+							
+								<script>
+									const button = document.getElementById('toggleButton');
+									const fullText = document.querySelector('.full-text');
+							
+									button.addEventListener('click', () => {
+										if (fullText.style.display === 'none') {
+											fullText.style.display = 'inline'; // Tampilkan teks lengkap
+											button.textContent = 'Sembunyikan'; // Ubah teks tombol
+										} else {
+											fullText.style.display = 'none'; // Sembunyikan teks lengkap
+											button.textContent = 'Lihat Selengkapnya'; // Ubah teks tombol
+										}
+									});
+								</script>
+							</div>
+						</div>
+					</div>	
+
+				</div>
+			</div>
+		</div>
+		
+		<!-- ==== ABOUT ==== -->
+		<div class="container" id="sejarah" name="sejarah">
+			<div class="row white">
+				<h1 class="fade-down centered">Sejarah Maladan</h1>
+				<hr>
+				
+				<div class="fade-up col-md-6">
+					<p align="justify">Asal-usul nama Dusun Maladan di Kalurahan Jatimulyo, Kapanewon Dlingo, Bantul, berkaitan dengan kisah perjalanan Sunan Kalijaga dan seorang pengikutnya bernama Cokrojoyo, seorang penderes nira kelapa. Dalam cerita tersebut, Sunan meminta bumbung berisi legen milik Cokrojoyo, lalu mengembalikannya dengan isinya berubah menjadi emas. Setelah kejadian itu, Cokrojoyo memutuskan mengikuti Sunan Kalijaga untuk menimba ilmu. Sunan kemudian menancapkan tongkat bambunya ke tanah dan meminta Cokrojoyo menunggu di sana hingga ia kembali, dengan pesan agar tidak meninggalkan tempat tersebut. Cokrojoyo menuruti perintah itu dan menunggu hingga bertahun-tahun, sampai area tersebut ditumbuhi hutan bambu yang lebat. Ketika Sunan Kalijaga kembali dan tidak menemukan Cokrojoyo, beliau membakar hutan bambu tersebut hingga api berkobar hebat. </p>
+				</div><!-- col-md-6 -->
+				
+				<div class="fade-up col-md-6">
+					<p align="justify">Api yang berkobar-kobar (dalam bahasa Jawa: "molad-molad") menjadi asal nama daerah tersebut, yaitu "Moladan", yang kemudian dikenal sebagai Dusun Maladan.
+						Setelah hutan terbakar, Sunan Kalijaga menemukan Cokrojoyo dalam keadaan hangus. Beliau kemudian membawanya ke sebuah mata air untuk memandikannya, dan Cokrojoyo hidup kembali. Mata air tersebut kini dikenal sebagai Sendang Banyuurip, yang berarti "air yang menghidupkan". 
+						Kisah ini juga berkaitan dengan penamaan beberapa padukuhan di Jatimulyo. Menurut sumber lain, nama "Maladan" identik dengan api dan amarah, melambangkan proses pengendalian hawa nafsu dalam perjalanan menuju kemuliaan sejati.
+						</p>
+				</div><!-- col-md-6 -->
+			</div><!-- row -->
+		</div><!-- container -->
+  		
+
+		<!-- ==== SECTION DIVIDER2 -->
+		<section class="section-divider textdivider divider2">
+			<div class="container">
+				<h1 class="fade-down">Jumlah Penduduk Maladan</h1>
+				<hr>
+				<div class="col-md-3">
+					<span class="counter">148</span>
+					<span class="counter-desc">Pria</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">156</span>
+					<span class="counter-desc">Wanita</span>
+				</div>
+				<div class="col-md-3"> 
+					<span class="counter">304</span>
+					<span class="counter-desc">Jiwa</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">110</span>
+					<span class="counter-desc">KK</span>
+				</div>
+			</div><!-- container -->
+		</section><!-- section -->
+
+
+		
+
+		<!-- ==== TEAM MEMBERS ==== -->
+		<div class="container section" id="penduduk" name="penduduk">
+		<br>
+			<div class="row white centered">
+				<h1 class="fade-down centered">PENDAPAT TOKOH SETEMPAT</h1>
+				<hr class="fade-down title-mb">
+				<div class="col-md-4 ">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/pakdukuh.jpg" alt="">
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>NURHUDA (DUKUH)</h4>
+						<p align="justify">Bentuk geografis pegunungan membuat warga dusun maladan memiliki mayoritas pekerjaan sebagai petani. Maladan adalah dusun kecil yang selalu melangkah maju dengan memanfaatkan komoditas yang ada. Saya orang asli maladan, dan sejauh ini maladan telah mengalami kemajuan yang signifikan.</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/mbahsutiyem.jpg" alt="">
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Mbah Sutiyem</h4>
+						<p align="justify">Maladan adalah dusun yang aman dan tentram. Masyarakat Maladan lebih memilih menyelesaikan masalah dengan cara kekeluargaan dibandingkan jalur hukum karena budaya persaudaraan dari dulu sudah dilakukan. 3 Kata tentang maladan adalah Beras, Singkong, Jagung. </p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/mbah_is.jpg" alt="">
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>MBAH HAJI ISKANDAR</h4>
+						<p align="justify">Dusun Maladan adalah dusun yang menjunjung tinggi nilai kebersamaan. Masyarakatnya hidup dalam semangat gotong royong, bahu-membahu dalam berbagai aspek kehidupan. Di Dusun Maladan, gotong royong bukan sekadar kebiasaan, melainkan warisan yang terus dijaga dari generasi ke generasi. Semangat inilah yang membuat dusun kecil ini tetap kuat dan harmonis.</p>
+					</div>
+				</div>
+				
+			</div><!-- row -->
+		</div><!-- container -->
+		<!-- ==== SECTION DIVIDER3 -->
+		<section class="section-divider textdivider divider3">
+			<div class="container">
+				<h1 class="fade-down">TENTANG</h1>
+				<hr>
+				<p class="fade-up" align="justify">Dusun Maladan adalah salah satu dari sepuluh padukuhan yang berada di Kalurahan Jatimulyo, Kapanewon Dlingo, Kabupaten Bantul, Daerah Istimewa Yogyakarta. Wilayah ini berbatasan dengan Desa Pengkok, Patuk, Gunungkidul di sebelah utara; Desa Getas, Playen, Gunungkidul di timur; Desa Temuwuh, Dlingo, Bantul di selatan; dan Desa Terong, Dlingo, Bantul di barat. 
+					Secara geografis, Dusun Maladan terletak di perbukitan yang berbatasan dengan Kapanewon Patuk, Gunungkidul, menawarkan pemandangan alam yang asri dan indah. Masyarakatnya dikenal ramah dan menjaga tradisi serta budaya setempat.
+					</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<!-- ==== PORTFOLIO ==== -->
+		<div id="portfolio" name="portfolio">
+		<br>
+			<div class="row white">
+				<h1 class="fade-down centered">GALLERY</h1>
+				<hr class="fade-down title-mb">
+			</div><!-- /row -->
+			<div class="">
+			<div class="">	
+				
+				<div id="portfolio-carousel">
+					<!-- PORTFOLIO IMAGE 1 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g11.jpg" alt="">
+								<figcaption>
+									<h5>Kali Oya</h5>
+									<a href="images/g11.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->					
+					
+					<!-- PORTFOLIO IMAGE 2 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g22.jpg" alt="">
+								<figcaption>
+									<h5>Lapangan Voli</h5>
+									<a href="images/g22.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 3 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g33.jpg" alt="">
+								<figcaption>
+									<h5>Persawahan</h5>
+									<a href="images/g33.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+					<!-- PORTFOLIO IMAGE 4 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g44.jpg" alt="">
+								<figcaption>
+									<h5>Sapi</h5>
+									<a href="images/g44.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 5 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g5.jpg" alt="">
+								<figcaption>
+									<h5>Lahan KWT</h5>
+									<a href="images/g5.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 6 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g6.jpg" alt="">
+								<figcaption>
+									<h5>Belajar Ngaji</h5>
+									<a href="images/g6.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+<!-- PORTFOLIO IMAGE 1 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g7.jpg" alt="">
+								<figcaption>
+									<h5>Halaman KWT</h5>
+									<a href="images/g7.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->				
+					
+					<!-- PORTFOLIO IMAGE 2 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g8.jpg" alt="">
+								<figcaption>
+									<h5>Sungai RT 01</h5>
+									<a href="images/g8.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 3 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g9.jpg" alt="">
+								<figcaption>
+									<h5>Pengajian</h5>
+									<a href="images/g9.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/g10.jpg" alt="">
+								<figcaption>
+									<h5>Jalan Dusun Maladan</h5>
+									<a href="images/g10.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+
+			</div><!-- /carousel -->	
+			</div><!-- /row -->			
+
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+		<!-- ==== SECTION DIVIDER4 ==== -->
+		<section class="section-divider textdivider divider4">
+			<div class="container">
+				<h1 class="fade-down">Nala - Jantung Hati</h1>
+				<hr>
+				<p class="fade-up">"Jejak Singgahmu, Kenangan Selamanya. Datang Sebagai Tamu, Pulang Sebagai Keluarga"</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<!-- ==== BLOG ==== -->
+		<div class="container" id="galeri" name="galeri">
+		<br>
+			<div class="row white">
+				<h1 class="fade-down centered">APA SAJA YANG ADA DI MALADAN?</h1>
+				<hr class="fade-down title-mb">
+			</div><!-- /row -->
+			
+			<div class="row">
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img width="535" height="535" class="img fade-down" src="images/k1-kwt.jpg">
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<h4>➔</h4>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Kelompok Wanita Tani </h2>
+						<p align="justify">Kelompok Wanita Tani (KWT) adalah komunitas perempuan di bidang pertanian yang dikelola secara mandiri untuk meningkatkan kesejahteraan bersama. 
+							Dengan semangat gotong royong, mereka mengolah lahan, menanam, hingga memasarkan hasil panen, menjadikan pertanian bukan sekadar pekerjaan, tetapi juga sumber kesejahteraan dan kebersamaan.</p>
+					</div>
+				</div><!-- /col -->
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img width="535" height="535" class="img fade-down" src="images/k2_pengajian.jpg">
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<h4>➔</h4>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Pengajian</h2>
+						<p align="justify">Suasana pengajian di Dusun Maladan mencerminkan kebersamaan dan kekhusyukan dalam menimba ilmu agama. Warga berkumpul dengan penuh antusias, memperdalam pemahaman keimanan dan mempererat silaturahmi. Pengajian menjadi wadah untuk saling berbagi nasihat dan memperkuat hubungan antar sesama.  
+
+							Kegiatan ini rutin diadakan di masjid dan tempat tertentu di dusun, menciptakan lingkungan yang penuh ketenangan dan kedamaian.</p>
+					</div>
+				</div><!-- /col -->
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img width="535" height="535" class="img fade-down" src="images/k3_ternak.jpg">
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<h4>➔</h4>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Ternak</h2>
+						<p align="justify">Selain ketahanan pangan dari padi, peternakan sapi juga menjadi bagian penting dalam kehidupan warga Dusun Maladan. Dengan perawatan yang telaten dan sistem pemeliharaan yang baik, ternak sapi memberikan manfaat besar bagi kesejahteraan dan perekonomian masyarakat.</p>
+					</div>
+				</div><!-- /col -->
+
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /container -->
+
+		
+		<!-- ==== SECTION DIVIDER6 ==== -->
+		<section class="section-divider textdivider divider6">
+			<div class="container">
+				<h1 class="fade-down">Aksata - Tidak Akan Terputus</h1>
+				<hr>
+				<div class="fade-up">
+					<p>"Senandung Alam, Harmoni Maladan. Lembah Sunyi, Keindahan Alam"</p>
+				</div>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<div class="container" id="kontak" name="kontak">
+			<div class="row row white">
+			<br>
+				<h1 class="centered fade-down">TERIMAKASIH TELAH BERKUNJUNG</h1>
+				<hr class="fade-down title-mb">
+				<div class="col-md-4 fade-up">
+					<h3>Contact Information</h3><br/>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.2381324183784!2d110.48708507484538!3d-7.891841992130874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a523893d4982f%3A0xfee7d6cef7654a33!2sJl.%20Dusun%20Maladan%2C%20Daerah%20Istimewa%20Yogyakarta!5e1!3m2!1sid!2sid!4v1739171034398!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<p><span class="icon icon-home"></span>Maladan, Jatimulyo, Dlingo, Kab.Bantul, DI Yogyakarta<br/>
+						<span class="icon icon-phone"></span>085198689857 (Dukuh Maladan)<br/>
+						<span class="icon icon-mobile"></span>padukuhanmaladan@gmail.com<br/>
+						<span class="icon icon-envelop"></span> <a href="https://www.instagram.com/kknumby_maladan22">Instagram KKN UMBY 22 Maladan</a> <br/>
+						<span class="icon icon-twitter"></span> <a href="https://www.tiktok.com/@kknumby_maladan22?_t=ZS-8tjbk16s5Yo&_r=1">Tiktok KKN UMBY 22 Maladan</a> <br/>
+					
+					</p>
+				</div><!-- col -->
+
+			</div><!-- row -->
+		
+		</div><!-- container -->
+
+		<div id="footerwrap">
+			<div class="container">
+				<div class="btt-wrapper fade-down"><a class="btt-link smoothScroll" href="#home"><i class="el-icon-chevron-up"></i></a></div>
+				<h4 class="fade-up">Created by<a href="https://www.instagram.com/kknumby_maladan22"> TIM KKN UMBY 22 Maladan</a> - 2025</h4>
+			</div>
+		</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+  </body>
+</html>
